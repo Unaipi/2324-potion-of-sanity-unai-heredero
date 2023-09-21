@@ -15,7 +15,8 @@ const execute = async () => {
         //creamos ingredientes
 
         const ingredients = Ingredients.load(data);
-        //showIngredients(ingredients);
+
+        showIngredients(ingredients);
 
         const cauldron = new Cauldron(ingredients);
 
@@ -53,10 +54,6 @@ const showIngredients = (ingredients) => {
 }
 
 const showPotion = (potion) => {
-    // console.log(`${potion.name}`);
-    // console.log(`Value:         ${potion.value}`)
-    // console.log(`Weight:        ${potion.weight}`)
-    // console.log(`Time:          ${potion.time}`)
     console.log("------------------------------------")
     console.log(potion)
 }

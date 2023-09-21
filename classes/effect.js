@@ -7,7 +7,7 @@ export class Effect {
 
     constructor(name, type) {
         this.name = name,
-        this.type = type
+            this.type = type
     }
 
     static from(name) {

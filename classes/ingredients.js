@@ -7,7 +7,11 @@ export class Ingredients{
     }
         
     static load(data) {
-        return new Ingredients(data.ingredients.map(Ingredient.from));
+        // DOS ALTERNATIVAS
+        //1.
+        //return new Ingredients(data.ingredients.map(Ingredient.from));            
+        //2.
+        return new Ingredients(data.ingredients.map(ingredient => Ingredient.from(ingredient)));
     }   
 
     find(name) {
